@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nativewapp | the native web GmbH</title>
+    <script type="module" src="./ts/main.ts"></script>
+    <link rel="manifest" href="./webmanifest.json" />
+    <link rel="icon" href="https://app.thenativeweb.io/v2/api/logo" />
+    <style>
+      @font-face {
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src: url(../fonts/source-sans-pro-latin-400-normal-c124c88c.woff2)
+          format("woff2");
+      }
+
+      @font-face {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src: url(../fonts/ubuntu-latin-400-normal-7f653b3c.woff2)
+          format("woff2");
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: Source Sans Pro, sans-serif;
+        line-height: 1.5;
+      }
+
+      body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+      }
+
+      header {
+        padding: 0.5rem clamp(1rem, 2vw, 3rem);
+        background-color: rgb(34 34 34);
+        color: #fff;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.25rem;
+      }
+
+      nav:after {
+        content: "";
+      }
+
+      #logo {
+        height: 2.75rem;
+        display: inline;
+        vertical-align: middle;
+      }
+      nav a {
+        flex-shrink: 1;
+      }
+
+      wapp-search {
+        width: 100%;
+        max-width: 40rem;
+        flex-shrink: 1;
+      }
+
+      main {
+        padding: 3rem;
+        min-width: 0;
+      }
+
+      footer {
+        background-color: rgb(34 34 34);
+        color: #fff;
+        padding: 2.5rem;
+        display: grid;
+        place-items: center;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+
+      footer a {
+        color: inherit;
+      }
+
+      footer svg {
+        width: 1rem;
+        height: 1rem;
+        color: rgb(221 0 153);
+        vertical-align: middle;
+      }
+
+      .align-middle {
+        vertical-align: middle;
+      }
+    </style>
+    <link
+      rel="preload"
+      href="./fonts/source-sans-pro-latin-400-normal-c124c88c.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/ubuntu-latin-400-normal-7f653b3c.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://api.allorigins.win" />
+    <meta
+      name="description"
+      content="2ndTube for the native web GmbH - search all YouTube videos of the channel in one place!"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="."
+          ><img
+            id="logo"
+            alt="Logo of the native web GmbH"
+            src="https://app.thenativeweb.io/v2/api/logo"
+            width="86.3"
+            height="99.5"
+        /></a>
+        <wapp-search></wapp-search>
+      </nav>
+    </header>
+    <main>
+      <wapp-videos></wapp-videos>
+    </main>
+    <footer>
+      <p>
+        <span class="align-middle">Made with</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        <span class="align-middle"
+          >by
+          <a href="https://www.thenativeweb.io">the native web</a>
+          and
+          <a href="https://hoeser.dev">Raphael Höser</a>
+          |
+          <a href="https://www.thenativeweb.io/company/legal-notice"
+            >Legal notice</a
+          >
+          |
+          <a href="https://www.thenativeweb.io/company/privacy-policy"
+            >Privacy policy</a
+          >
+        </span>
+      </p>
+    </footer>
+  </body>
+</html>
