@@ -19,6 +19,9 @@ Original (left/top) vs. reimplementation (right/bottom)
 
 ### Lighthouse
 
+Note: These scores are made with the default "mobile" preset of the Chrome Dev Tools.
+The Desktop scores are significantly higher (86 for performance).
+
 #### Original
 
 ![Original Lighthouse Score (32, 98, 92, 100)](./README/lighthouse-score-orig.jpg)
