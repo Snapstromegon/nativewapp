@@ -26,11 +26,15 @@ export default class WappVideo extends LitElement {
 
     .thumbnail {
       grid-area: thumb;
-      place-content: cover;
+      border-bottom: 3px solid rgb(221 0 153);
+    }
+
+    .thumbnail img {
       width: 100%;
       height: auto;
       aspect-ratio: 640/360;
-      border-bottom: 3px solid rgb(221 0 153);
+      display: block;
+      object-fit: cover;
     }
 
     .date {
@@ -104,14 +108,25 @@ export default class WappVideo extends LitElement {
       rel="noopener noreferrer"
       aria-label=${this.video.item.title}
       ><article>
-        <img
-          class="thumbnail"
-          src=${"https://app.thenativeweb.io" + this.video.item.thumbnailUrl}
-          loading="lazy"
-          alt=${`Thumbnail image for video ${this.video.item.title}`}
-          width="640"
-          height="360"
-        />
+        <picture class="thumbnail">
+          <source
+            type="image/jpeg"
+            media="(min-width: 400px)"
+            srcset=${`https://i.ytimg.com/vi/${this.video.item.youTubeId}/hqdefault.jpg`}
+          />
+          <source
+            type="image/jpeg"
+            srcset=${`https://i.ytimg.com/vi/${this.video.item.youTubeId}/mqdefault.jpg`}
+          />
+          <img
+            src=${`https://i.ytimg.com/vi/${this.video.item.youTubeId}/mqdefault.jpg`}
+            loading="lazy"
+            decoding="async"
+            alt=${`Thumbnail image for video ${this.video.item.title}`}
+            width="640"
+            height="360"
+          />
+        </picture>
         <span class="date"
           >${getRelativeTime(new Date(this.video.item.publishedAt))}</span
         >
