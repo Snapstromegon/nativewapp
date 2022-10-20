@@ -143,9 +143,10 @@ export default class WappVideos extends LitElement {
       this.hasNext = data.pageInfo.hasNextPage;
       this.totalCount = data.pageInfo.totalCount;
       this.videos.push(...data.items);
-      if (!this.allVideosCount) {
-        this.allVideosCount = data.pageInfo.totalCount;
-      }
+      this.allVideosCount = Math.max(
+        data.pageInfo.totalCount,
+        this.allVideosCount || 0
+      );
     }
   }
 
