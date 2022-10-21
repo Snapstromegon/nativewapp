@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <title>nativewapp | the native web GmbH</title>
     <script type="module" src="./ts/main.ts"></script>
-    <link rel="manifest" href="./webmanifest.json" />
-    <link rel="icon" href="https://app.thenativeweb.io/v2/api/logo" />
+    <link rel="manifest" href="https://www.hoeser.dev/manifest.json" />
+    <link
+      rel="icon"
+      href="https://hoeser.dev/img/xLtk7cIc45-1024.svg"
+      type="image/svg+xml"
+    />
     <style>
       @font-face {
         font-family: Source Sans Pro;
@@ -109,6 +114,20 @@
       .align-middle {
         vertical-align: middle;
       }
+
+      .disclaimer {
+        width: 80rem;
+        max-width: 90%;
+        margin: auto;
+        background: rgb(34 34 34);
+        color: #fff;
+        padding: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .disclaimer a, h1 {
+        color:rgb(221 0 153);
+      }
     </style>
     <link
       rel="preload"
@@ -124,26 +143,196 @@
     />
     <link rel="preconnect" href="https://api.allorigins.win" />
     <link rel="preconnect" href="https://i.ytimg.com" />
-    <meta
-      name="description"
-      content="2ndTube for the native web GmbH - search all YouTube videos of the channel in one place!"
-    />
+    <meta name="description" content="DEMO for the native web's 2nd tube" />
   </head>
   <body>
     <header>
       <nav>
         <a href="."
-          ><img
+          ><svg
             id="logo"
-            alt="Logo of the native web GmbH"
-            src="https://app.thenativeweb.io/v2/api/logo"
-            width="86.3"
-            height="99.5"
-        /></a>
+            viewBox="0 0 1024 1024"
+            style="transform: scaleX(-100%)"
+            fill="#fff"
+            width="1024"
+            height="1024"
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+          >
+            <path
+              class="colorA"
+              id="hummingbird-Tail-Bottom-A"
+              d="m719 762 226 178-269-109Z"
+            ></path>
+            <path
+              class="colorA"
+              id="hummingbird-Tail-Top-A"
+              d="M1010 925 752 708l-33 54Z"
+            ></path>
+            <path
+              class="colorA"
+              id="hummingbird-Tail-Start-A"
+              d="m676 831-35-223 111 100Z"
+            ></path>
+            <path
+              class="colorA"
+              id="hummingbird-Tail-Start-Bottom-A"
+              d="m388 753 253-145 35 223Z"
+            ></path>
+            <path
+              class="colorA"
+              id="hummingbird-Back-A"
+              d="m486 512-98 241 253-145Z"
+            ></path>
+            <path
+              class="colorA"
+              id="hummingbird-Belly-A"
+              d="m388 753-99-193 197-48Z"
+            ></path>
+            <path
+              class="colorA"
+              id="hummingbird-Throat-A"
+              d="m289 560-72-182 269 134Z"
+            ></path>
+            <path
+              class="colorA"
+              id="hummingbird-Head-A"
+              d="m217 378 155-39 114 173Z"
+            ></path>
+            <path
+              class="colorA"
+              id="hummingbird-Beak-A"
+              d="M217 378H7l229 48Z"
+            ></path>
+            <path
+              class="colorA"
+              id="hummingbird-Wing-Front-A"
+              d="M486 512 941 71 641 608Z"
+            ></path>
+            <path
+              class="colorA"
+              id="hummingbird-Wing-Back-1-A"
+              d="M408 394 636 80 486 512Z"
+            ></path>
+            <path
+              class="colorA"
+              id="hummingbird-Wing-Back-2-A"
+              d="m636 80-17 303-133 129Z"
+            ></path>
+            <path
+              class="colorB"
+              style="--progress: 0"
+              id="hummingbird-Tail-Bottom-B"
+              d="m719 762 226 178-269-109Z"
+            ></path>
+            <path
+              class="colorB"
+              style="--progress: 0"
+              id="hummingbird-Tail-Top-B"
+              d="M1010 925 752 708l-33 54Z"
+            ></path>
+            <path
+              class="colorB"
+              style="--progress: calc(1 / 7)"
+              id="hummingbird-Tail-Start-B"
+              d="m676 831-35-223 111 100Z"
+            ></path>
+            <path
+              class="colorB"
+              style="--progress: calc(2 / 7)"
+              id="hummingbird-Tail-Start-Bottom-B"
+              d="m388 753 253-145 35 223Z"
+            ></path>
+            <path
+              class="colorB"
+              style="--progress: calc(3 / 7)"
+              id="hummingbird-Back-B"
+              d="m486 512-98 241 253-145Z"
+            ></path>
+            <path
+              class="colorB"
+              style="--progress: calc(4 / 7)"
+              id="hummingbird-Belly-B"
+              d="m388 753-99-193 197-48Z"
+            ></path>
+            <path
+              class="colorB"
+              style="--progress: calc(5 / 7)"
+              id="hummingbird-Throat-B"
+              d="m289 560-72-182 269 134Z"
+            ></path>
+            <path
+              class="colorB"
+              style="--progress: calc(6 / 7)"
+              id="hummingbird-Head-B"
+              d="m217 378 155-39 114 173Z"
+            ></path>
+            <path
+              class="colorB"
+              style="--progress: 1"
+              id="hummingbird-Beak-B"
+              d="M217 378H7l229 48Z"
+            ></path>
+            <path
+              class="colorB"
+              style="--progress: 0"
+              id="hummingbird-Wing-Front-B"
+              d="M486 512 941 71 641 608Z"
+            ></path>
+            <path
+              class="colorB"
+              style="--progress: 1"
+              id="hummingbird-Wing-Back-1-B"
+              d="M408 394 636 80 486 512Z"
+            ></path>
+            <path
+              class="colorB"
+              style="--progress: 0.8"
+              id="hummingbird-Wing-Back-2-B"
+              d="m636 80-17 303-133 129Z"
+            ></path>
+          </svg>
+        </a>
         <wapp-search></wapp-search>
       </nav>
     </header>
     <main>
+      <div class="disclaimer">
+        <h1>ONLY FOR DEMO PURPOSES</h1>
+        <p>
+          This page was built only for demo purposes in relation with
+          <a
+            href="https://www.hoeser.dev/blog/2022-10-20-nativewapp/"
+            rel="noopener noreferrer"
+            >this blogpost</a
+          >.<br />Please use the original 2ntube found here:
+          <a href="https://app.thenativeweb.io/" rel="noopener noreferrer"
+            >https://app.thenativeweb.io/</a
+          ><br />
+          <a href="https://thenativeweb.io/" rel="noopener noreferrer"
+            >The native web</a
+          >
+          is not involved in this project.
+        </p>
+        <br>
+        <h1>NUR FÜR DEMOZWECKE</h1>
+        <p>
+          Diese Seite ist nur eine Demo als Beilage zu meinem
+          <a
+            href="https://www.hoeser.dev/blog/2022-10-20-nativewapp/"
+            rel="noopener noreferrer"
+            >zugehörigen Blogpost</a
+          > gedacht.<br />
+          Bitte nutzt die originale 2ntube Seite hier:
+          <a href="https://app.thenativeweb.io/" rel="noopener noreferrer"
+            >https://app.thenativeweb.io/</a
+          ><br />
+          <a href="https://thenativeweb.io/" rel="noopener noreferrer"
+            >The native web</a
+          >
+          ist nicht an diesem Projekt beteiligt.
+        </p>
+      </div>
       <wapp-videos></wapp-videos>
     </main>
     <footer>
@@ -162,17 +351,7 @@
         </svg>
         <span class="align-middle"
           >by
-          <a href="https://www.thenativeweb.io">the native web</a>
-          and
           <a href="https://hoeser.dev">Raphael Höser</a>
-          |
-          <a href="https://www.thenativeweb.io/company/legal-notice"
-            >Legal notice</a
-          >
-          |
-          <a href="https://www.thenativeweb.io/company/privacy-policy"
-            >Privacy policy</a
-          >
         </span>
       </p>
     </footer>
