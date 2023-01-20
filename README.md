@@ -3,6 +3,10 @@
 This is a short reimplementation of [https://app.thenativeweb.io/v2/ui](https://app.thenativeweb.io/v2/ui).
 It tries to stay close to the original while improving some aspects.
 
+## Blogpost
+
+Read the Blogpost here: https://www.hoeser.dev/blog/2022-10-20-nativewapp/
+
 ## Compatibillity
 
 This reimplementation uses many modern web features on purpose and might not work everywhere.
